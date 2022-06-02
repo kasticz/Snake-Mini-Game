@@ -1,0 +1,94 @@
+.gameWrapper{
+    position: absolute;
+    height: 900px;
+    width: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(9,100px);
+    grid-template-rows: repeat(9,100px);
+}
+
+.gameCell{
+    border: 1px solid black
+}   
+
+.startGame{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    height: 100px;
+    width: 200px;
+    background: #f44336;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.startGame:hover{
+    background: #be2b20
+}
+
+.gameOver{
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    font-size: 50px;
+    text-align: center;
+    display: none;
+}
+.foodCounter{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.difficultyWrapper{
+    position: absolute;
+    left: 78%;
+    top: 40%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 100px;    
+}
+.difficulty{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer; 
+    transition: 0.5s all;   
+}
+.difficulty[data-active = "true"]{
+    background: #2f2f6f
+}
+
+body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
