@@ -1,14 +1,14 @@
 .gameWrapper{
     position: absolute;
-    height: 900px;
-    width: 900px;
+    height: 70%;
+    width: 42%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: 3px solid black;
     display: grid;
-    grid-template-columns: repeat(9,100px);
-    grid-template-rows: repeat(9,100px);
+    grid-template-columns: repeat(9,11.1%);
+    grid-template-rows: repeat(9,11.1%);
 }
 
 .gameCell{
@@ -32,8 +32,8 @@
 }
 
 .gameOver{
-    height: 600px;
-    width: 700px;
+    height: 70%;
+    width: 70%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -68,7 +68,8 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    margin-right: 100px;    
+    margin-right: 100px; 
+    margin-top: 20px;   
 }
 .difficulty{
     margin-top: 20px;
