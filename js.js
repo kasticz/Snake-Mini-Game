@@ -29,7 +29,7 @@ function startGame(){
             gameSpeed = +item.dataset.speed
         }
     })
-    let speedModificator = gameSpeed === 500 ? 20 : gameSpeed > 349 ? 10 : 7
+    let speedModificator = gameSpeed === 500 ? 18 : gameSpeed > 349 ? 12 : 9
 
 
 

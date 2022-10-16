@@ -5,10 +5,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 3px solid black;
     display: grid;
     grid-template-columns: repeat(9,11.1%);
     grid-template-rows: repeat(9,11.1%);
+}
+button{
+    border-radius: 10px;
 }
 
 .gameCell{
@@ -84,7 +86,7 @@
     cursor: pointer; 
     transition: 0.5s all;   
 }
-.difficulty[data-active = "true"]{
+.difficulty[data-active = "true"],.difficulty:hover{
     background: #2f2f6f
 }
 
